@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xezel D. Peshlakai | Engineer in Training</title>
+    <style>
+        :root {
+            --bg-color: #F7F4EE;
+            --text-main: #1C1C1C;
+            --text-light: #5A7060;
+            --header-bg: #243D0F;
+            --accent-color: #55A630;
+            --box-bg: #FFFFFF;
+            --border-color: #DDE5DC;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+        header {
+            background: var(--header-bg);
+            color: #fff;
+            padding: 3.5rem 1rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            color: #E9C46A;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2.5rem;
+            background: var(--box-bg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            margin-top: -2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        section {
+            margin-bottom: 3.5rem;
+        }
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            color: var(--header-bg);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .skills-category {
+            margin-bottom: 1rem;
+        }
+        .skills-category h3 {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            background: #F1F5F1;
+            color: var(--header-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+        }
+        .item-block {
+            margin-bottom: 2.5rem;
+        }
+        .item-block h3 {
+            margin: 0 0 0.2rem 0;
+            color: var(--header-bg);
+            font-size: 1.3rem;
+        }
+        .subtitle {
+            font-style: italic;
+            color: var(--text-light);
+            margin: 0 0 1rem 0;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .photo-gallery figure {
+            margin: 0;
+            padding: 0;
+        }
+        .photo-gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background-color: #e3e8e4; 
+        }
+        figcaption {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.4rem;
+            font-style: italic;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--header-bg);
+            color: #fff;
+            margin-top: 3rem;
+            border-top: 6px solid var(--accent-color);
+        }
+        footer a {
+            color: #E9C46A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Xezel D. Peshlakai, EIT</h1>
+        <p>U.S. Citizen | Yucca Valley, CA | valid drivers license</p>
+        <p style="color: #F7F4EE; font-size: 1.05rem;">Living at the intersection of sustainability and technology</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p><strong>[Prompt: Write 3-4 sentences detailing your motivation for pursuing energy optimization and building systems performance. Mention your long-term goal of obtaining your Mechanical PE license.]</strong></p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-category">
+                <h3>Programming</h3>
+                <ul class="skills-list">
+                    <li>Python (Pandas/NumPy)</li>
+                    <li>C/C++</li>
+                    <li>MATLAB</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Software</h3>
+                <ul class="skills-list">
+                    <li>Microsoft Office Suite</li>
+                    <li>AutoCAD</li>
+                    <li>SolidWorks</li>
+                    <li>Fusion 360</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul class="skills-list">
+                    <li>Communication</li>
+                    <li>Leadership</li>
+                    <li>Adaptability</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="item-block">
+                <h3>Process Engineering Intern</h3>
+                <p class="subtitle">Wall Colmonoy - Los Lunas, NM | May 2024 - Aug 2024</p>
+                <ul>
+                    <li>Developed AutoCAD Plant 3D model for a three-tier metal foundry supporting a $1.2M capital redesign</li>
+                    <li>Evaluated equipment (pallet lifter, tundish heater, and dryer) upgrade options under operational constraints and cost</li>
+                    <li>Investigated production process errors using material screening and stress testing techniques</li>
+                    <li>Presented and documented technical findings and results with engineering and manufacturing teams</li>
+                </ul>
+                <div class="photo-gallery">
+                    <figure>
+                        <img src="autocad-model.jpg" alt="AutoCAD 3D model">
+                        <figcaption>[Prompt: Caption for AutoCAD layout]</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="item-block">
+                <h3>Energy Engineering Intern</h3>
+                <p class="subtitle">CPower Energy Management - Remote | May 2023 - Jan 2024</p>
+                <ul>
+                    <li>Cleaned and combined disparate curtailment plan data using Excel into a single uniform curtailment plan database</li>
+                    <li>Matched product sales to installed locations using Python to track the life cycle of energy-efficient lighting products</li>
+                    <li>Aggregated data using Excel from multiple State Technical Reference Manuals for M&V analysis of energy-efficient lighting and HVAC equipment.</li>
+                </ul>
+                <div class="photo-gallery">
+                    <figure>
+                        <img src="cpower-photo1.jpg" alt="Description of photo 1">
+                        <figcaption>[Prompt: Caption for photo 1]</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="cpower-photo2.jpg" alt="Description of photo 2">
+                        <figcaption>[Prompt: Caption for photo 2]</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="item-block">
+                <h3>Green Advisor</h3>
+                <p class="subtitle">Swarthmore College's Office of Sustainability - Swarthmore, PA | Nov 2021 - May 2024</p>
+                <ul>
+                    <li>Researched and strategically installed 16 recycling bins around campus athletic facilities to reduce waste by 65%</li>
+                    <li>Hosted monthly meetings with student peers to relay campus goals and objectives, and suggest sustainable habits</li>
+                    <li>Managed a composting facility 4 hours/week to separate waste and recycling from compost</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects & Undergraduate Research</h2>
+
+            <div class="item-block">
+                <h3>AR Smart Glasses, Engineering Capstone</h3>
+                <p class="subtitle">May 2023 - Aug 2023</p>
+                <ul>
+                    <li>Designed 3D-printed smart glasses integrating beamsplitter optics and electronics using AutoCAD</li>
+                    <li>Integrated SBC and 1080p microdisplay using MIPI-DSI, and designed a PCB for reliable high-speed data transfer</li>
+                </ul>
+                <div class="photo-gallery">
+                    <figure>
+                        <img src="project-photo1.jpg" alt="Project field work">
+                        <figcaption>[Prompt: Field work or prototype caption]</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="project-photo2.jpg" alt="Data analysis visualization">
+                        <figcaption>[Prompt: Data model or graph caption]</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="item-block">
+                <h3>Smart Battery Manufacturing REU</h3>
+                <p class="subtitle">Drexel University - Philadelphia, PA | May 2022 - Aug 2022</p>
+                <ul>
+                    <li>Programmed battery testing methods using C on a microcontroller-based potentiostat system</li>
+                    <li>Conducted galvanostatic and voltammetric testing on lithium-ion coin cell batteries</li>
+                </ul>
+                <div class="photo-gallery">
+                    <figure>
+                        <img src="PESHLAKAI-SMREU2022poster (2).pdf" alt="Project field work">
+                        <figcaption>[Prompt: Field work or prototype caption]</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="item-block">
+                <h3>Microelectronics and Sensors Systems REU</h3>
+                <p class="subtitle">University of Tennessee, Knoxville - Knoxville, TN</p>
+                <ul>
+                    <li>Programmed FPGA testing procedures for SDRAM systems and wrote RTL in SystemVerilog</li>
+                    <li>Documented testing workflows to support hardware validation</li>
+                </ul>
+                <div class="photo-gallery">
+                    <figure>
+                        <img src="Research Poster Template - Horizontal.pdf" alt="Project field work">
+                        <figcaption>[Prompt: Field work or prototype caption]</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Certifications</h2>
+            <div class="item-block">
+                <h3>Swarthmore College, Swarthmore, PA</h3>
+                <p>B.S. Engineering [ABET Accredited] & B.A. Computer Science<br>
+                Cumulative GPA: 3.4<br>
+                May 2021 - May 2025</p>
+            </div>
+            <div class="item-block">
+                <h3>Certifications</h3>
+                <p>Engineer-in-Training (EIT)<br>
+                Issued by the California BPELSG, License #187887 | May 2026</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>
+            <a href="mailto:xpeshlakai64@gmail.com">xpeshlakai64@gmail.com</a> | 
+            <a href="tel:9104676866">(910)-467-6866</a> | 
+            <a href="https://www.linkedin.com/in/xezel-peshlakai" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
