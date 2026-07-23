@@ -23,12 +23,12 @@
             color: var(--text-main);
             background-color: var(--bg-color);
         }
+        
         header {
             background: var(--header-bg);
             color: #fff;
-            padding: 3.5rem 1rem;
+            padding: 3.5rem 1rem 2rem 1rem;
             text-align: center;
-            border-bottom: 6px solid var(--accent-color);
         }
         header h1 {
             margin: 0;
@@ -40,18 +40,52 @@
             margin-top: 0.5rem;
             color: #E9C46A;
         }
+        
+        /* Sticky Navigation Bar */
+        nav {
+            background: var(--header-bg);
+            text-align: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 6px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Mobile adjustment for nav */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
         .container {
             max-width: 900px;
             margin: auto;
             padding: 2.5rem;
             background: var(--box-bg);
             box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-            margin-top: -2rem;
+            margin-top: 2rem;
             border-radius: 8px;
             border: 1px solid var(--border-color);
         }
+        
         section {
             margin-bottom: 3.5rem;
+            scroll-margin-top: 80px; /* Prevents nav bar from covering headers when clicking links */
         }
         h2 {
             border-bottom: 2px solid var(--accent-color);
@@ -157,6 +191,15 @@
         <p style="color: #F7F4EE; font-size: 1.05rem;">Energy Efficiency & Building Systems Performance</p>
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+    </nav>
+
     <div class="container">
         
         <section id="about">
@@ -253,7 +296,7 @@
         </section>
         
         <section id="projects">
-            <h2>Engineering & Technical Projects</h2>
+            <h2>Projects</h2>
 
             <div class="item-block">
                 <h3>CS99 Final Poster</h3>
@@ -301,7 +344,7 @@
         </section>
 
         <section id="research">
-            <h2>Undergraduate Research</h2>
+            <h2>Research</h2>
 
             <div class="item-block">
                 <h3>Microelectronics and Sensors Systems REU</h3>
